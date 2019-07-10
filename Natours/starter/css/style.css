@@ -26,6 +26,7 @@ body {
     color: #777;
     padding: 3rem;
     box-sizing: border-box;
+    /*border-box include padding and border into with and height*/
 }
 
 .header {
