@@ -1,15 +1,14 @@
 {
-  "name": "natours",
+  "name": "starter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "node-sass": "^4.12.0"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
 }
