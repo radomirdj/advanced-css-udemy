@@ -48,16 +48,15 @@ body {
                   rgba($color_primary_dark, 0.8)),
   url("../img/hero.jpg");
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-}
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
 
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
-
-.header__logo {
-  height: 3.5rem;
+  &__logo {
+    height: 3.5rem;
+  }
 }
 
 .text-box {
@@ -73,22 +72,21 @@ body {
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
-}
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation: moveInLeft 1s ease-out;
+  }
 
-.heading-primary--main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3.5rem;
-  animation: moveInLeft 1s ease-out;
-}
-
-.heading-primary--small {
-  display: block;
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: 1.73rem;
-  animation: moveInRight 1s ease-out;
+  &--small {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1.73rem;
+    animation: moveInRight 1s ease-out;
+  }
 }
 
 @keyframes moveInLeft {
@@ -132,56 +130,55 @@ body {
   }
 }
 
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  border-radius: 100rem;
-  transition: all 0.2s;
-  position: relative;
-}
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 100rem;
+    transition: all 0.2s;
+    position: relative;
+  }
 
-.btn:hover {
-  transform: translateY(-.3rem);
-  box-shadow: 0 1rem 2rem rgba($color_black, 0.2);
-}
+  &:hover {
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgba($color_black, 0.2);
+    &::after {
+      transform: scale(1.4, 1.6);
+      opacity: 0;
+    }
+  }
 
-.btn:active {
-  transform: translateY(-.1rem);
-  box-shadow: 0 .5rem 1rem rgba($color_black, 0.2);
+  &:active {
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem rgba($color_black, 0.2);
+  }
 
-}
+  &--white {
+    background-color: $color_white;
+    color: $color_grey_dark;
+    &::after {
+      background-color: $color_white;
+    }
+  }
 
-.btn--white {
-  background-color: $color_white;
-  color: $color_grey_dark;
-}
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border-radius: 10rem;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: all .4s;
+  }
 
-.btn::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  border-radius: 10rem;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  transition: all .4s;
-}
-
-.btn--white::after {
-  background-color: $color_white;
-}
-
-.btn:hover::after {
-  transform: scale(1.4, 1.6);
-  opacity: 0;
-}
-
-.btn--animated {
-  animation: moveInBottom .5s ease-out .75s;
-  animation-fill-mode: backwards;
+  &--animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+  }
 }
