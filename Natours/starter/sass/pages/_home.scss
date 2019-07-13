@@ -7,7 +7,7 @@
                   to right bottom,
                   rgba($color_primary_light, 0.8),
                   rgba($color_primary_dark, 0.8)),
-  url("../img/hero.jpg");
+  url("../../img/hero.jpg");
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   &__logo-box {
     position: absolute;
@@ -24,4 +24,19 @@
   background-color: $color-grey-light;
   margin-top: -20vh;
   padding: 25rem;
+}
+
+.section-features {
+  margin-top: -10rem;
+  padding: 20rem 0;
+  background-size: cover; //Important!!! so image is all over background.
+  background: linear-gradient(
+                  to right bottom,
+                  rgba($color_primary_light, 0.8),
+                  rgba($color_primary_dark, 0.8)),
+  url("../../img/nat-4.jpg");
+  transform: skewY(-7deg);
+  & > * {
+    transform: skewY(7deg);
+  }
 }
