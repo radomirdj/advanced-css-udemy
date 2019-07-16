@@ -47,12 +47,11 @@
 .section-tours {
   background-color: $color-grey-light;
   margin-top: -20vh;
-  padding: 30rem 10rem;
+  padding: 30rem 10rem 20rem 10rem;
 }
 
 .section-stories {
-  background-color: $color-grey-light;
-  margin-top: -20vh;
+  position: relative;
   padding: 10rem 10rem;
   text-align: center;
 }
