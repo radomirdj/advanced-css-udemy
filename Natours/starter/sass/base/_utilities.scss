@@ -15,3 +15,7 @@
 .u-margin-bottom-small {
   margin-bottom: 1.5rem;
 }
+
+.u-skew-mediumX-return {
+  transform: skewX($skew-mediumX-deg);
+}

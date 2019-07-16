@@ -1,0 +1,30 @@
+.story {
+  background-color: $color-white;
+  width: 75%;
+  margin: 0 auto;
+  padding: 5rem;
+  box-shadow: .5rem 1rem 2rem rgba($color-black, .1);
+  transform: skewX(-$skew-mediumX-deg);
+  border-radius: 3px;
+  &__image {
+    height: 15rem;
+    width: 15rem;
+    //display: inline-block;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    margin-right: 3rem;
+    img {
+      height: 100%;
+    }
+
+  }
+
+  &__text {
+    //display: inline-block;
+    //float: left;
+    font-size: 1.6rem;
+  }
+}
