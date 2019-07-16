@@ -6,7 +6,7 @@
   box-shadow: .5rem 1rem 2rem rgba($color-black, .1);
   transform: skewX(-$skew-mediumX-deg);
   border-radius: 3px;
-  &__image {
+  &__shape {
     height: 15rem;
     width: 15rem;
     //display: inline-block;
@@ -16,7 +16,10 @@
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     margin-right: 3rem;
-    img {
+    position: relative;
+    .story__image {
+      transition: all .2s;
+      transform: scale(1.5);
       height: 100%;
     }
 
@@ -27,4 +30,28 @@
     //float: left;
     font-size: 1.6rem;
   }
+
+  &__caption {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+    position: absolute;
+    color: $color-white;
+    top: 50%;
+    left: 50%;
+    transition: all .5s;
+    transform: translate(-50%, 0%);
+    opacity: 0;
+  }
+
+  &:hover &__image {
+    filter: blur(3px) brightness(80%);
+    transform: scale(1);
+  }
+
+  &:hover &__caption {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+
 }
