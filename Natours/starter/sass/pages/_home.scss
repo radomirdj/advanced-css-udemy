@@ -55,3 +55,20 @@
   padding: 10rem 10rem;
   text-align: center;
 }
+
+.section-book {
+  background-color: $color-primary-light;
+  padding: 10rem;
+}
+
+.book {
+  background: linear-gradient(108deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 50%,  transparent 50%), url('../img/nat-10.jpg');
+  background-size: cover;
+  //height: 30rem;
+  width: 85%;
+  margin: 0 auto;
+  &__form {
+    width: 50rem;
+    padding: 5rem;
+  }
+}

@@ -4,3 +4,6 @@ object-fit: cover;   -- da popuni parent-a, po nesto isece da ispadne
                      -- fill popuni ali razvuce da se popuni
 
 overflow: hidden;    -- da izbaci sve sto je van elementa
+
+
+http://caniuse.com --- if supports that css feature
