@@ -7,3 +7,5 @@ overflow: hidden;    -- da izbaci sve sto je van elementa
 
 
 http://caniuse.com --- if supports that css feature
+
+https://icomoon.io --- find SVG-s there
