@@ -1,31 +1,122 @@
-.compose {
-  background-color: var(--color-grey-light-2);
-  max-width: 120rem;
-  margin: 15rem auto;
+
+.logo__image {
+  height: 3.25rem;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.search {
+  flex: 0 0 40%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  &__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: var(--color-grey-light-2);
+    border: none;
+    padding: .7rem 2rem;
+    border-radius: 100rem;
+    width: 90%;
+    margin-right: -5rem;
+    transition: all .2s;
+    &:focus {
+      width: 100%;
+      outline: none;
+      background-color: var(--color-grey-light-3);
+    }
+
+    &::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--color-grey-light-4);
+    }
+  }
+
+  &__input:focus + &__button {
+    background-color: var(--color-grey-light-3);
+
+  }
+
+  &__button {
+    border: none;
+    background-color: var(--color-grey-light-2);
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--color-grey-dark-3);
+  }
 }
 
-.header {
-  background-color: #fff;
-  padding: 2rem;
-}
-
-.content {
+.user-nav {
   display: flex;
-  //height: 100%;
-}
+  justify-content: space-between;
+  align-items: stretch;
+  align-self: stretch;
 
-.side-bar {
-  background-color: #000;
-  color: #fff;
-  padding: 2rem;
-  height: 100%;
-  flex: 0 0 18%;
-}
+  & > * {
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+  }
 
-.hotels {
-  background-color: #fff;
-  flex: 1;
+  & > *:hover {
+    background-color: var(--color-grey-light-3);
+  }
+
+  &__box {
+    position: relative;
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--color-grey-dark-3);
+  }
+
+  &__notification {
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--color-primary);
+    color: #fff;
+    border-radius: 10rem;
+    height: 1.7rem;
+    width: 1.7rem;
+    z-index: 10;
+    position: absolute;
+    top: .7rem;
+    right: .6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__user {
+  }
+
+  &__user-name {
+    margin-left: 1rem;
+    font-weight: 600;
+    color: var(--color-grey-dark-3);
+  }
+
+  &__user-photo {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+  }
+
 
 }
