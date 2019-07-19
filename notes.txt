@@ -9,3 +9,5 @@ overflow: hidden;    -- da izbaci sve sto je van elementa
 http://caniuse.com --- if supports that css feature
 
 https://icomoon.io --- find SVG-s there
+
+https://cubic-bezier.com/#.17,.67,.83,.67   transition functions
