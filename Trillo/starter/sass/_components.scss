@@ -205,7 +205,7 @@
 }
 
 .hotel-img {
-  display: inline-block;
+  display: block; //inline and inline-block leaves little white space under
   width: 100%;
 }
 
@@ -281,5 +281,67 @@
 
   &:hover {
     color: var(--color-grey-dark-3);
+  }
+}
+
+.description {
+  font-size: 1.4rem;
+  &__paragraph {
+    padding: 1rem;
+  }
+
+  &__list {
+    border-top: var(--line);
+    border-bottom: var(--line);
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+  }
+
+  &__item {
+    flex: 0 0 50%;
+    padding: .5rem 1rem;
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 1rem;
+      left: -.5rem;
+      content: "";
+      background-size: cover;
+      height: 1rem;
+      width: 1rem;
+
+      //display: inline-block;
+      //background-image: url("../img/svg/chevron-thin-right.svg");
+      background-color: var(--color-primary);
+      -webkit-mask-image: url("../img/svg/chevron-thin-right.svg");
+      -webkit-mask-size: cover;
+    }
+  }
+
+  &__friends {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  &__count {
+    font-size: 1.2rem;
+    color: var(--color-grey-dark-3);
+  }
+
+  &__photo-list {
+
+  }
+
+  &__photo {
+    height: 4rem;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    &:not(:last-child) {
+      margin-right: -1.5rem;
+    }
   }
 }

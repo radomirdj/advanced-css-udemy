@@ -34,3 +34,20 @@
   height: 100rem;
 }
 
+.detail {
+  display: flex;
+  background-color: var(--color-grey-light-1);
+  padding: 5rem;
+}
+
+.description {
+  flex: 0 0 60%;
+  background-color: #fff;
+  margin-right: 5rem;
+  padding: 2rem;
+}
+
+.reviews {
+  flex: 1;
+  background-color: orangered;
+}
