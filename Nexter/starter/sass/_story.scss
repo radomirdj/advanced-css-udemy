@@ -1,0 +1,12 @@
+.story {
+  &__images {
+    background-color: $color-primary-dark;
+    grid-column: full-start/cell-end 4;
+
+  }
+
+  &__text {
+    background-color: $color-secondary;
+    grid-column: cell-start 5/full-end;
+  }
+}

@@ -13,3 +13,35 @@ $color-grey-dark-2: #6D5D4B;
 // FONT VARIABLES
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+}
+
+body {
+  font-weight: 300;
+  font-family: $font-primary;
+  line-height: 1.6;
+  color: $color-grey-dark-2;
+}
+
+.container {
+  & > * {
+    font-size: 3rem;
+    padding: 3rem;
+    color: #fff;
+  }
+
+  display: grid;
+  grid-template-columns: [side-start]8rem [side-end full-start] minmax(6rem, 1fr) [cells-start] repeat(8, [cell-start] minmax(min-content, 14rem) [cell-end]) [cells-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+}

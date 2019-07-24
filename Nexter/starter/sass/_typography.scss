@@ -1,0 +1,11 @@
+%heading {
+  font-weight: 400;
+  font-family: $font-display;
+}
+.heading-4 {
+  @extend %heading;
+  font-size: 1.9rem;
+  &--dark {
+    color: #000;
+  }
+}
