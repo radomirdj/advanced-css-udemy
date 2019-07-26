@@ -6,7 +6,16 @@
   }
 
   &__text {
-    background-color: $color-secondary;
+    background-color: $color-grey-light-1;
+    color: #000;
     grid-column: cell-start 5/full-end;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+    justify-content: center;
+  }
+
+  &__paragraph {
+    font-size: 1.4rem;
   }
 }

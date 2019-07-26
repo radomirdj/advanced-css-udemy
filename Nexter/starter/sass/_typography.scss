@@ -1,11 +1,56 @@
 %heading {
   font-weight: 400;
   font-family: $font-display;
+  color: $color-primary;
+  line-height: 1;
 }
+
+//.heading-1 {
+//  @extend %heading;
+//  font-size: 4rem;
+//  &--dark {
+//    color: #000;
+//  }
+//}
+
+.heading-2 {
+  @extend %heading;
+  font-size: 4rem;
+  font-style: italic;
+  &--dark {
+    color: #000;
+  }
+}
+
+.heading-3 {
+  @extend %heading;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  &--dark {
+    color: #000;
+  }
+}
+
 .heading-4 {
   @extend %heading;
   font-size: 1.9rem;
   &--dark {
     color: #000;
   }
+}
+
+
+.btn:link,
+.btn:visited
+{
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: $color-primary;
+  font-family: $font-display;
+  padding: 1.5rem 2.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-self: flex-start;
 }
